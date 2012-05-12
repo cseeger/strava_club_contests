@@ -23,5 +23,5 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 group :test do
   gem "rspec-rails", ">= 2.0.1"
-  gem "factory_girl"
+  gem "factory_girl_rails", "~> 3.0"
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120512172602) do
+ActiveRecord::Schema.define(:version => 20120512191108) do
 
   create_table "athletes", :force => true do |t|
     t.string   "name"
@@ -29,18 +29,27 @@ ActiveRecord::Schema.define(:version => 20120512172602) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "leaderboard_line_items", :force => true do |t|
+    t.integer  "leaderboard_id"
+    t.float    "average_elevation"
+    t.integer  "number_of_rides"
+    t.float    "elevation_gain"
+    t.string   "athlete_name",      :limit => 60
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
+  add_index "leaderboard_line_items", ["leaderboard_id"], :name => "index_leaderboard_line_items_on_leaderboard_id"
+
   create_table "leaderboards", :force => true do |t|
     t.integer  "club_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.integer  "month",      :default => 1,    :null => false
+    t.integer  "year",       :default => 2012, :null => false
   end
 
   add_index "leaderboards", ["club_id"], :name => "index_leaderboards_on_club_id"
-
-  create_table "loaderboards_athletes", :id => false, :force => true do |t|
-    t.integer "leaderboard_id"
-    t.integer "athlete_id"
-  end
 
   create_table "rides", :force => true do |t|
     t.float    "elevation_gain"
