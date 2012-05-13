@@ -19,9 +19,13 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem "haml", ">= 3.0.0"
-gem "haml-rails"
+gem 'haml', '>= 3.0.0'
+gem 'haml-rails'
+gem 'httparty'
+
 group :test do
-  gem "rspec-rails", ">= 2.0.1"
-  gem "factory_girl_rails", "~> 3.0"
+  gem 'rspec-rails', '>= 2.0.1'
+  gem 'factory_girl_rails', '~> 3.0'
+  gem 'vcr'
+  gem 'webmock'
 end
