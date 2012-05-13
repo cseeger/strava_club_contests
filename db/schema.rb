@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120513000323) do
+ActiveRecord::Schema.define(:version => 20120513182812) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name",        :null => false
@@ -29,8 +29,10 @@ ActiveRecord::Schema.define(:version => 20120513000323) do
     t.string   "athlete_name",      :limit => 60
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
+    t.integer  "athlete_strava_id"
   end
 
+  add_index "leaderboard_line_items", ["athlete_strava_id"], :name => "index_leaderboard_line_items_on_athlete_strava_id"
   add_index "leaderboard_line_items", ["leaderboard_id"], :name => "index_leaderboard_line_items_on_leaderboard_id"
 
   create_table "leaderboards", :force => true do |t|
