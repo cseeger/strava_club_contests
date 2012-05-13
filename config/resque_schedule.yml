@@ -1,0 +1,6 @@
+club_climb_update:
+  cron: 0 * * * *
+  class: ClubClimbUpdateWorker
+  queue: scheduled
+  args:
+  description: "Process climb data for all clubs via strava api"

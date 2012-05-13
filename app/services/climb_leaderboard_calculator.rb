@@ -1,5 +1,7 @@
 class ClimbLeaderboardCalculator
   def self.calculate_for_club(club)
+    club.leaderboard.destroy if club.leaderboard.present?
+
     leaderboard = Leaderboard.new
     leaderboard.month = Time.now.month
     leaderboard.year = Time.now.year
@@ -10,8 +12,7 @@ class ClimbLeaderboardCalculator
       line_item.number_of_rides = athlete.rides_for_month_year(leaderboard.month, leaderboard.year).count
       line_item.elevation_gain = athlete.total_elevation_for_month_year(leaderboard.month, leaderboard.year)
       line_item.average_elevation = athlete.average_elevation_per_ride_for_month_year(leaderboard.month, leaderboard.year)
-      line_item.leaderboard = leaderboard
-      line_item.save
+      leaderboard.leaderboard_line_items << line_item
     end
     club.leaderboard = leaderboard
     club.save

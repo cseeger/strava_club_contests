@@ -22,6 +22,8 @@ gem 'jquery-rails'
 gem 'haml', '>= 3.0.0'
 gem 'haml-rails'
 gem 'httparty'
+gem 'resque'
+gem 'resque-scheduler'
 
 group :test do
   gem 'rspec-rails', '>= 2.0.1'
