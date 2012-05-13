@@ -1,0 +1,92 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01%2000:00:00%20-0700
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01+00%3A00%3A00+-0700
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTA5M2JmZjRlMDdlYWNkNmFhYzUzNTIxMzJhYWE3OGM5BjsAVA%3D%3D--aa3bab3c5ac7a8741d8e354f8879b96e1c9a2b03; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.013285"
+      Date: 
+      - Sat, 12 May 2012 20:54:37 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides?athleteId=4693&amp;offset=0&amp;startDate=2012-04-01+00%3A00%3A00+-0700">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:37 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01%2000:00:00%20-0700
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTA5M2JmZjRlMDdlYWNkNmFhYzUzNTIxMzJhYWE3OGM5BjsAVA%3D%3D--aa3bab3c5ac7a8741d8e354f8879b96e1c9a2b03; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"d5008014d0b1349a970fdf7733b5caec\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTA5M2JmZjRlMDdlYWNkNmFhYzUzNTIxMzJhYWE3OGM5BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--5455018394c696b2c97f70381cd6a1865f43e230; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.015879"
+      Date: 
+      - Sat, 12 May 2012 20:54:38 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"rides\":[{\"id\":7516475,\"name\":\"Tam - Reverse Alpine\"},{\"id\":7131449,\"name\":\"Headlands - Nicasio\"},{\"id\":6737804,\"name\":\"Tam - Reverse Alpine Dam\"},{\"id\":6362515,\"name\":\"Pt. Reyes\"},{\"id\":6257550,\"name\":\"SB Lunch Loop (abbr)\"},{\"id\":6049082,\"name\":\"San Bruno Loop\"}]}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:38 GMT
+recorded_with: VCR 2.1.1

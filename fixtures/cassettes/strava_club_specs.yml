@@ -1,0 +1,92 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/clubs/15/members
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/clubs/15/members
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM3Zjg5MWQ5OTUwYWMxZDdhNzNkNmViMTA5YzE3YTE1BjsAVA%3D%3D--64f42acf1543924bebe7d7c2fcb54dcd2699e538; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.042390"
+      Date: 
+      - Sun, 13 May 2012 00:42:24 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/clubs/15/members">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:42:24 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/clubs/15/members
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM3Zjg5MWQ5OTUwYWMxZDdhNzNkNmViMTA5YzE3YTE1BjsAVA%3D%3D--64f42acf1543924bebe7d7c2fcb54dcd2699e538; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"882862e632f087c1922b2365548d51d9\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWM3Zjg5MWQ5OTUwYWMxZDdhNzNkNmViMTA5YzE3YTE1BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--dd530f79d1e973d6b371aa3db9301dd241478338; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.126482"
+      Date: 
+      - Sun, 13 May 2012 00:42:24 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"club\":{\"id\":15,\"name\":\"Mission Cycling\"},\"members\":[{\"id\":4693,\"name\":\"Cameron Ross\"},{\"id\":3879,\"name\":\"Scott Cronin\"},{\"id\":1827,\"name\":\"Michael Lehane\"},{\"id\":73709,\"name\":\"Jesse Gibbs\"},{\"id\":2921,\"name\":\"Ken Olofsen\"},{\"id\":4819,\"name\":\"Ron Williams\"},{\"id\":10161,\"name\":\"Tad Costerison\"},{\"id\":5583,\"name\":\"Scott Palkoski\"},{\"id\":3897,\"name\":\"Steven Oliver\"},{\"id\":72506,\"name\":\"Mike Betts\"},{\"id\":2061,\"name\":\"Bruce Prescott\"},{\"id\":195585,\"name\":\"Jamie Pantuso\"},{\"id\":1219,\"name\":\"Jason Wells\"},{\"id\":3975,\"name\":\"Scott Storrs\"},{\"id\":5524,\"name\":\"mary lukanuski\"},{\"id\":148493,\"name\":\"Jamie McGurk\"},{\"id\":2457,\"name\":\"A. Loddengaard\"},{\"id\":3985,\"name\":\"Michael Wong\"},{\"id\":1143,\"name\":\"Gregory Allen\"},{\"id\":4019,\"name\":\"Rachel Manfredi\"},{\"id\":4592,\"name\":\"Sean Chon\"},{\"id\":4798,\"name\":\"Jason Davis\"},{\"id\":13412,\"name\":\"Brien Wankel\"},{\"id\":4542,\"name\":\"Matt Hough\"},{\"id\":2931,\"name\":\"the professor\"},{\"id\":5968,\"name\":\"griff behncke\"},{\"id\":1113,\"name\":\"Daniel Hobe\"},{\"id\":1163,\"name\":\"Michael Watts\"},{\"id\":5099,\"name\":\"Brett Lider\"},{\"id\":6063,\"name\":\"Alex Mather\"},{\"id\":723,\"name\":\"Travis Crawford\"},{\"id\":5050,\"name\":\"Nick Kreeger\"},{\"id\":11981,\"name\":\"Bruce Power\"},{\"id\":9025,\"name\":\"Fred Moyer\"},{\"id\":4607,\"name\":\"Kent Mok\"},{\"id\":7090,\"name\":\"Yann Kerherve\"},{\"id\":12786,\"name\":\"Peter Oz\"},{\"id\":104736,\"name\":\"Jonathan Steele\"},{\"id\":1881,\"name\":\"H. McDonald\"},{\"id\":62159,\"name\":\"A. Bismonte\"},{\"id\":3778,\"name\":\"Tina Reid\"},{\"id\":29562,\"name\":\"Tyler Larsen\"},{\"id\":5179,\"name\":\"Jim H \"},{\"id\":2045,\"name\":\"K. Buckingham\"},{\"id\":1665,\"name\":\"Jason Herrick\"},{\"id\":68349,\"name\":\"Nicole Faraclas\"},{\"id\":10442,\"name\":\"Lee Jensen\"},{\"id\":4737,\"name\":\"Scott Davis\"},{\"id\":150516,\"name\":\"Alexandre Aybes\"},{\"id\":185605,\"name\":\"C. Thomas\"},{\"id\":5441,\"name\":\"B. Madden-Woods\"},{\"id\":130094,\"name\":\"Paul Fatheree\"},{\"id\":165492,\"name\":\"c. bunker\"},{\"id\":3764,\"name\":\"Steve Harris\"},{\"id\":2603,\"name\":\"David Wabel\"},{\"id\":256208,\"name\":\"Dave Sands\"},{\"id\":9661,\"name\":\"Walter Petruska\"},{\"id\":8201,\"name\":\"Emilie Cole\"},{\"id\":179409,\"name\":\"Beau Smith\"},{\"id\":11152,\"name\":\"Lance Lim\"},{\"id\":10422,\"name\":\"Mark Madeo\"},{\"id\":298489,\"name\":\"Mark Eppley\"},{\"id\":121339,\"name\":\"Miguel D\\u00edaz\"},{\"id\":4067,\"name\":\"Ryan Khavari\"},{\"id\":1889,\"name\":\"Carl B\"},{\"id\":55118,\"name\":\"David Bianco\"},{\"id\":13805,\"name\":\"Mark Dawson\"}]}"
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:42:24 GMT
+recorded_with: VCR 2.1.1

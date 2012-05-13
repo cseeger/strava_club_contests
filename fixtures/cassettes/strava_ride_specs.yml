@@ -1,0 +1,92 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/7516475
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/7516475
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTk5MWI3ZGU1ZjNjODc1MjhjYmVhNmQ0MDhkNjFkYzQ2BjsAVA%3D%3D--1edc31420d9e18a960847019062ef3b6ff2dd3bc; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.003280"
+      Date: 
+      - Sat, 12 May 2012 20:54:59 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/7516475">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:59 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/7516475
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTk5MWI3ZGU1ZjNjODc1MjhjYmVhNmQ0MDhkNjFkYzQ2BjsAVA%3D%3D--1edc31420d9e18a960847019062ef3b6ff2dd3bc; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"cc920fd478becaffa246f36c9a31715a\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk5MWI3ZGU1ZjNjODc1MjhjYmVhNmQ0MDhkNjFkYzQ2BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--026b774f35e4ced82446e12ba2d7e20fd680729b; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.020412"
+      Date: 
+      - Sat, 12 May 2012 20:54:59 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":7516475,\"startDate\":\"2012-04-28T14:39:23Z\",\"startDateLocal\":\"2012-04-28T07:39:23Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":16712,\"movingTime\":12747,\"distance\":75848.7,\"averageSpeed\":5.950317721816898,\"averageWatts\":116.736,\"maximumSpeed\":59587.2,\"elevationGain\":1094.2,\"location\":\"San Francisco, CA\",\"name\":\"Tam - Reverse Alpine\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:55:00 GMT
+recorded_with: VCR 2.1.1

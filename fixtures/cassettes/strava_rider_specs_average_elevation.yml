@@ -1,0 +1,626 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01%2000:00:00%20-0700
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01+00%3A00%3A00+-0700
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTE5MWMxOTFjZWE1YjRiMWFjNGNiMGJlOGM0ZmYwZDNlBjsAVA%3D%3D--992ccd4c4264e98f3b6d5f68de105037f2b210a7; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.005452"
+      Date: 
+      - Sat, 12 May 2012 20:54:41 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides?athleteId=4693&amp;offset=0&amp;startDate=2012-04-01+00%3A00%3A00+-0700">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:41 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides?athleteId=4693&offset=0&startDate=2012-04-01%2000:00:00%20-0700
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTE5MWMxOTFjZWE1YjRiMWFjNGNiMGJlOGM0ZmYwZDNlBjsAVA%3D%3D--992ccd4c4264e98f3b6d5f68de105037f2b210a7; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"d5008014d0b1349a970fdf7733b5caec\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTE5MWMxOTFjZWE1YjRiMWFjNGNiMGJlOGM0ZmYwZDNlBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--5b7501cf65781b9cf8be619729c2677d3464dbf2; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.008054"
+      Date: 
+      - Sat, 12 May 2012 20:54:41 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"rides\":[{\"id\":7516475,\"name\":\"Tam - Reverse Alpine\"},{\"id\":7131449,\"name\":\"Headlands - Nicasio\"},{\"id\":6737804,\"name\":\"Tam - Reverse Alpine Dam\"},{\"id\":6362515,\"name\":\"Pt. Reyes\"},{\"id\":6257550,\"name\":\"SB Lunch Loop (abbr)\"},{\"id\":6049082,\"name\":\"San Bruno Loop\"}]}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:41 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/7516475
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/7516475
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWU5ZDMwM2NjMmFkOTVlZDlmZDllNzUzMTZiZmI5ZTMxBjsAVA%3D%3D--5bedfbf58312d9f0ba2f101cb3a47608210b2862; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.003738"
+      Date: 
+      - Sat, 12 May 2012 20:54:42 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/7516475">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:42 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/7516475
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWU5ZDMwM2NjMmFkOTVlZDlmZDllNzUzMTZiZmI5ZTMxBjsAVA%3D%3D--5bedfbf58312d9f0ba2f101cb3a47608210b2862; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"cc920fd478becaffa246f36c9a31715a\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWU5ZDMwM2NjMmFkOTVlZDlmZDllNzUzMTZiZmI5ZTMxBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--f182fcf9c6973cd6ef03517ca11a80cd057cee21; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.019050"
+      Date: 
+      - Sat, 12 May 2012 20:54:42 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":7516475,\"startDate\":\"2012-04-28T14:39:23Z\",\"startDateLocal\":\"2012-04-28T07:39:23Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":16712,\"movingTime\":12747,\"distance\":75848.7,\"averageSpeed\":5.950317721816898,\"averageWatts\":116.736,\"maximumSpeed\":59587.2,\"elevationGain\":1094.2,\"location\":\"San Francisco, CA\",\"name\":\"Tam - Reverse Alpine\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:42 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/7131449
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/7131449
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM4MThhNDFmNDlhZTM4MTZkNTZiMDc5ZjNlMDIzODkzBjsAVA%3D%3D--550a00f834c7075233cf1d8430fffb281c05f46d; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.004363"
+      Date: 
+      - Sat, 12 May 2012 20:54:42 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/7131449">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:42 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/7131449
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM4MThhNDFmNDlhZTM4MTZkNTZiMDc5ZjNlMDIzODkzBjsAVA%3D%3D--550a00f834c7075233cf1d8430fffb281c05f46d; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"09c43a7c2300d2eaf7d8a2cf50eb5f31\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWM4MThhNDFmNDlhZTM4MTZkNTZiMDc5ZjNlMDIzODkzBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--dd1a9a2431b7822c8403fa217414075027f4fc30; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.017480"
+      Date: 
+      - Sat, 12 May 2012 20:54:42 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":7131449,\"startDate\":\"2012-04-21T15:08:03Z\",\"startDateLocal\":\"2012-04-21T08:08:03Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":18414,\"movingTime\":13547,\"distance\":92743.7,\"averageSpeed\":6.846069240422233,\"averageWatts\":128.836,\"maximumSpeed\":72583.2,\"elevationGain\":1058.0,\"location\":\"San Francisco, CA\",\"name\":\"Headlands - Nicasio\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:42 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/6737804
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/6737804
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTdkNDU5NmQ2ZDI0YmYwMDVhODQ0NTk0MDMxMjdkNzdhBjsAVA%3D%3D--396f8dd46898eed87248bfb55417f723adb6b11b; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.005555"
+      Date: 
+      - Sat, 12 May 2012 20:54:42 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/6737804">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:42 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/6737804
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTdkNDU5NmQ2ZDI0YmYwMDVhODQ0NTk0MDMxMjdkNzdhBjsAVA%3D%3D--396f8dd46898eed87248bfb55417f723adb6b11b; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"9c00d23096abe25f9f3989ff7ed8720c\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTdkNDU5NmQ2ZDI0YmYwMDVhODQ0NTk0MDMxMjdkNzdhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--141b19e353911bbb068908e8c9de9b13ee6217df; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.020838"
+      Date: 
+      - Sat, 12 May 2012 20:54:43 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":6737804,\"startDate\":\"2012-04-14T14:44:04Z\",\"startDateLocal\":\"2012-04-14T07:44:04Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":20441,\"movingTime\":16699,\"distance\":103322.0,\"averageSpeed\":6.187316605784778,\"averageWatts\":120.308,\"maximumSpeed\":57510.0,\"elevationGain\":1357.8,\"location\":\"San Francisco, CA\",\"name\":\"Tam - Reverse Alpine Dam\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:43 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/6362515
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/6362515
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWNkOTNjYTlhYWQ2ZTI5ZmQxODk2NmI2ZDZjMGRiYzk5BjsAVA%3D%3D--914cb4264da450a661252f4082f24ec92e43dcdc; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.064454"
+      Date: 
+      - Sat, 12 May 2012 20:54:43 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/6362515">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:43 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/6362515
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWNkOTNjYTlhYWQ2ZTI5ZmQxODk2NmI2ZDZjMGRiYzk5BjsAVA%3D%3D--914cb4264da450a661252f4082f24ec92e43dcdc; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"923552b8c40ef66c53f0316a93b3dc4c\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWNkOTNjYTlhYWQ2ZTI5ZmQxODk2NmI2ZDZjMGRiYzk5BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--0ea5b22dd3f7d19d2d235e683683410c911908f4; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.021067"
+      Date: 
+      - Sat, 12 May 2012 20:54:43 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":6362515,\"startDate\":\"2012-04-07T15:06:10Z\",\"startDateLocal\":\"2012-04-07T08:06:10Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":18342,\"movingTime\":15924,\"distance\":112445.0,\"averageSpeed\":7.061353931173072,\"averageWatts\":133.27,\"maximumSpeed\":72281.16,\"elevationGain\":995.6,\"location\":\"San Francisco, CA\",\"name\":\"Pt. Reyes\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:43 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/6257550
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/6257550
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWQ0NmJmMDE4YTU3ODVmYzk1MTMyYjNmYTI0MjNiNWM5BjsAVA%3D%3D--fb12ac38718d0ac25e4305505fd57e30b0ca86c8; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.003836"
+      Date: 
+      - Sat, 12 May 2012 20:54:43 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/6257550">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:43 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/6257550
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWQ0NmJmMDE4YTU3ODVmYzk1MTMyYjNmYTI0MjNiNWM5BjsAVA%3D%3D--fb12ac38718d0ac25e4305505fd57e30b0ca86c8; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"3d37c09471c5912f126b173e7c7cf78c\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWQ0NmJmMDE4YTU3ODVmYzk1MTMyYjNmYTI0MjNiNWM5BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--08987577d3844a078f06b09cfa6e19bd3ac5e82d; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.020835"
+      Date: 
+      - Sat, 12 May 2012 20:54:43 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":6257550,\"startDate\":\"2012-04-05T18:17:33Z\",\"startDateLocal\":\"2012-04-05T11:17:33Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":7140,\"movingTime\":6426,\"distance\":41836.3,\"averageSpeed\":6.510473078120137,\"averageWatts\":133.276,\"maximumSpeed\":73055.87999999999,\"elevationGain\":570.6,\"location\":\"San Francisco, CA\",\"name\":\"SB Lunch Loop (abbr)\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:44 GMT
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/rides/6049082
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/rides/6049082
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM2YzMxNGM0Nzc1ODkyNWM3NjYxMjJhOTJiNTljYmZmBjsAVA%3D%3D--b90ab913de0af4dacee1b2fd3600b5b187780d23; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.003680"
+      Date: 
+      - Sat, 12 May 2012 20:54:44 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/rides/6049082">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:44 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/rides/6049082
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWM2YzMxNGM0Nzc1ODkyNWM3NjYxMjJhOTJiNTljYmZmBjsAVA%3D%3D--b90ab913de0af4dacee1b2fd3600b5b187780d23; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"187a736daa6ee4cbff47a76ba5275445\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWM2YzMxNGM0Nzc1ODkyNWM3NjYxMjJhOTJiNTljYmZmBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--407bb951bb2cca1e62ccf30129903acc2937b52b; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.018424"
+      Date: 
+      - Sat, 12 May 2012 20:54:44 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"ride\":{\"id\":6049082,\"startDate\":\"2012-04-01T17:04:45Z\",\"startDateLocal\":\"2012-04-01T10:04:45Z\",\"timeZoneOffset\":-28800,\"elapsedTime\":8065,\"movingTime\":7402,\"distance\":47262.9,\"averageSpeed\":6.385152661442853,\"averageWatts\":135.255,\"maximumSpeed\":65349.72,\"elevationGain\":658.4,\"location\":\"San Francisco, CA\",\"name\":\"San Bruno Loop\",\"bike\":{\"id\":4060,\"name\":\"IF\"},\"athlete\":{\"id\":4693,\"name\":\"Cameron Ross\",\"username\":\"cross\"},\"description\":\"\",\"commute\":false,\"trainer\":false}}"
+    http_version: 
+  recorded_at: Sat, 12 May 2012 20:54:44 GMT
+recorded_with: VCR 2.1.1

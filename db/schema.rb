@@ -11,22 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120512191108) do
-
-  create_table "athletes", :force => true do |t|
-    t.string   "name"
-    t.integer  "club_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "athletes", ["club_id"], :name => "index_athletes_on_club_id"
+ActiveRecord::Schema.define(:version => 20120513000323) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name",        :null => false
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "strava_id"
   end
 
   create_table "leaderboard_line_items", :force => true do |t|
@@ -50,14 +42,5 @@ ActiveRecord::Schema.define(:version => 20120512191108) do
   end
 
   add_index "leaderboards", ["club_id"], :name => "index_leaderboards_on_club_id"
-
-  create_table "rides", :force => true do |t|
-    t.float    "elevation_gain"
-    t.integer  "athlete_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
-  add_index "rides", ["athlete_id"], :name => "index_rides_on_athlete_id"
 
 end

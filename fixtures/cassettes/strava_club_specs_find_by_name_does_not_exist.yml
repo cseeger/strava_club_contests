@@ -1,0 +1,92 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/clubs?name=doesnotexistsridersclub
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/clubs?name=doesnotexistsridersclub
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWNlNWM1ZWEyNTFlMTE5NThjZjkxMzYxODc0NzllMTI5BjsAVA%3D%3D--734f48950fd284e8766a53c5f5cfc5b7c329f7e5; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.254940"
+      Date: 
+      - Sun, 13 May 2012 00:27:22 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/clubs?name=doesnotexistsridersclub">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:27:22 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/clubs?name=doesnotexistsridersclub
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWNlNWM1ZWEyNTFlMTE5NThjZjkxMzYxODc0NzllMTI5BjsAVA%3D%3D--734f48950fd284e8766a53c5f5cfc5b7c329f7e5; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"da37c6927c8b221740b325b0b79cd63e\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWNlNWM1ZWEyNTFlMTE5NThjZjkxMzYxODc0NzllMTI5BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a48cdca3ad6d5535882b27996be2ea90dbc52c83; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.029735"
+      Date: 
+      - Sun, 13 May 2012 00:27:22 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"clubs\":[]}"
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:27:22 GMT
+recorded_with: VCR 2.1.1

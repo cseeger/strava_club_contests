@@ -1,0 +1,92 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://app.strava.com/api/v1/clubs?name=mission%20cycling
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 302
+      message: Found
+    headers: 
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "302"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Location: 
+      - http://www.strava.com/api/v1/clubs?name=mission+cycling
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Cache-Control: 
+      - no-cache
+      Set-Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTk2OGFkM2M0MTNlMDgzNTZkMjEzNDJhNWQ3ZTljNTJhBjsAVA%3D%3D--336039b0cbd806733d9a2601aa5a28a65f91596a; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.004873"
+      Date: 
+      - Sun, 13 May 2012 00:21:26 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: <html><body>You are being <a href="http://www.strava.com/api/v1/clubs?name=mission+cycling">redirected</a>.</body></html>
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:21:26 GMT
+- request: 
+    method: get
+    uri: http://www.strava.com/api/v1/clubs?name=mission%20cycling
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Cookie: 
+      - _strava3_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTk2OGFkM2M0MTNlMDgzNTZkMjEzNDJhNWQ3ZTljNTJhBjsAVA%3D%3D--336039b0cbd806733d9a2601aa5a28a65f91596a; HttpOnly=
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - close
+      Status: 
+      - "200"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Etag: 
+      - "\"5ef108ee76b6c521f151267dd2ff3fba\""
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Set-Cookie: 
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTk2OGFkM2M0MTNlMDgzNTZkMjEzNDJhNWQ3ZTljNTJhBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--cef9c0e31c7ebbac7d8fbc809dd6e9c588f5d682; domain=strava.com; path=/; HttpOnly
+      X-Runtime: 
+      - "0.047758"
+      Date: 
+      - Sun, 13 May 2012 00:21:27 GMT
+      X-Rack-Cache: 
+      - miss
+      Server: 
+      - nginx/1.0.10 + Phusion Passenger 3.0.11 (mod_rails/mod_rack)
+    body: 
+      encoding: US-ASCII
+      string: "{\"clubs\":[{\"id\":15,\"name\":\"Mission Cycling\"}]}"
+    http_version: 
+  recorded_at: Sun, 13 May 2012 00:21:27 GMT
+recorded_with: VCR 2.1.1
