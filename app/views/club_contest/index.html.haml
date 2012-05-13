@@ -1,0 +1,11 @@
+%h1
+  Monthly climbing leaderboard for
+  = link_to @club.name, "http://app.strava.com/clubs/#{@club.strava_id}"
+
+%ul
+  - @leaderboard_line_items.each_with_index do |line_item, index|
+    %li
+      %span.rank= "##{index + 1} - "
+      = link_to line_item.athlete_name, "http://app.strava.com/athletes/1"
+      .details
+        = "#{number_with_delimiter(line_item.elevation_gain)}ft in #{number_with_delimiter(line_item.number_of_rides)} rides - averaging #{number_with_delimiter(line_item.average_elevation)}ft"

@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(:version => 20120513000323) do
 
   create_table "leaderboard_line_items", :force => true do |t|
     t.integer  "leaderboard_id"
-    t.float    "average_elevation"
+    t.integer  "average_elevation"
     t.integer  "number_of_rides"
-    t.float    "elevation_gain"
+    t.integer  "elevation_gain"
     t.string   "athlete_name",      :limit => 60
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
