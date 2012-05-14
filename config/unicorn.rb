@@ -1,9 +1,9 @@
 # http://unicorn.bogomips.org/examples/unicorn.conf.rb
 
-working_directory "/home/ubuntu/strava_club_contests"
-pid "/home/ubuntu/strava_club_contests/tmp/pids/unicorn.pid"
-stderr_path "/home/ubuntu/strava_club_contests/log/unicorn.log"
-stdout_path "/home/ubuntu/strava_club_contests/log/unicorn.log"
+working_directory "/home/ubuntu/apps/strava_club_contests"
+pid "/home/ubuntu/apps/strava_club_contests/tmp/pids/unicorn.pid"
+stderr_path "/home/ubuntu/apps/strava_club_contests/log/unicorn.log"
+stdout_path "/home/ubuntu/apps/strava_club_contests/log/unicorn.log"
 
 listen "/tmp/unicorn.strava_club_contests.sock"
 worker_processes 2
